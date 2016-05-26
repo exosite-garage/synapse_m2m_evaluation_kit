@@ -77,13 +77,10 @@ Once your devices have been added and they've started sending data, you can clic
 <p>The SNAP node application has a time triggered loop in which it sends signal strength in -dBm, temperature as an analog A/D input value (in bits), and a photo-cell value in a range of 0 to 100 (percentage) converted on the node from an A/D input value.  </p>
 <p>The signal is graphed exactly as is.  The Photocell range value and the analog temperature value are sent as a JSON formated string so that two pieces of information can be sent at one time.  This JSON string looks something like this: <em>{"atmp":519,"ph":17}</em> to a data source in Exosite called 'packet'.  There is an Exosite script that then parses this value and puts the individual values into specific data sources.  This demonstrates how an <a href="/en-us/articles/200513440-Scripting">Exosite script</a> can be used for parsing data.</p>
 <p>The analog Temperature value also has a script associated with it.  This script takes the analog value and converts it to degrees F and stores it into another data source.  This shows how Exosite scripts can be used to process data.</p>
-<p><a href="/en-us/articles/200513440-Scripting">Exosite Scripting</a></p>
+<p><a href="http://docs.exosite.com/scripting">Exosite Scripting</a></p>
 <p> </p>
 <p><span class="wysiwyg-underline wysiwyg-font-size-large"><strong>Customizing</strong></span></p>
 <p>Users can build custom dashboards, create their own widgets, create new scripts, and add other data from the nodes using the Exosite web portal tool.  To edit the RF Engine SNAP application on the nodes, Exosite provides the SNAPpy script.  Please see below.</p>
-<p><a href="/hc/en-us/categories/200035036-Portals-Web-Portal-Dashboard-Interface">Exosite Portals documentation</a> - Dashboards, Widgets, and other features of the web tool</p>
-<p><a href="/hc/en-us/articles/200513440-Scripting">Exosite Scripting</a> - API and overview of Exosite's platform scripting</p>
-<p><a href="/hc/en-us/articles/200455293-API-documentation-Libraries">Exosite's APIs</a> - Links to Exosite's platform's APIs </p>
 <p><a href="http://www.synapse-wireless.com/snap">Synapse SNAP Reference</a></p>
 <p><a href="http://www.synapse-wireless.com/snap-components-free-developers-IDE-tools/portal">Synapse Portal IDE</a> </p>
 <p> </p>
@@ -138,6 +135,6 @@ Once your devices have been added and they've started sending data, you can clic
 <p style="padding-left: 30px;">If you attempt to add an E10 or a RF Engine node to your portal but receive an error message like the following, there are a few steps to resolve this.</p>
 <p style="padding-left: 30px;"><span class="wysiwyg-color-red90"><em><span class="wysiwyg-color-red">You have attempted to add a MAC Address that is not approved for this device. This may be by error. Please verify the exact MAC Address of your device and if you believe it is correct, use the Feedback system to contact us</span></em></span></p>
 <p style="padding-left: 30px;">The first is to verify you have the correct unique MAC Address or SNAP Address.  This is important to double check the sticker and possibly even the Debug USB port output.  </p>
-<p style="padding-left: 30px;">Next, contact the support team using the 'HELP' tab on the web portal or create a ticket <a href="/hc/en-us/requests/new">through this support site</a>.  Let us know the unique hardware address, the device type (E10 or RF Engine node), and your email and other contact information.  If a previous user has registered the device but not deleted it, the support team will take action to resolve this situation as fast as possible.</p>
+<p style="padding-left: 30px;">Next, contact the support team using the 'HELP' tab on the web portal or create a ticket <a href="https://support.exosite.com/hc/en-us/requests/new">through this support site</a>.  Let us know the unique hardware address, the device type (E10 or RF Engine node), and your email and other contact information.  If a previous user has registered the device but not deleted it, the support team will take action to resolve this situation as fast as possible.</p>
 <p> </p>
 <p> </p>
