@@ -1,49 +1,71 @@
-<p><span class="wysiwyg-font-size-x-large">Overview </span></p>
-<p>Exosite has worked with Synapse Wireless to create an evaluation kit based on Synapse's SNAP Connect E10 Gateway.  This E10 Gateway has an Ethernet connection and runs Linux in addition to internally having a SNAP RF Engine embedded in it so act as a gateway for a SNAP network to the internet.</p>
-<p>The evaluation kit is made up of a Synapse SNAPConnect E10 <em>Gateway</em> and two Synapse RF Engines running on protoboards in addition to some external sensors and LEDs.  The software for this evaluation kit can be used for any make-up of devices and is meant as an evaluation tool and reference code for your specific M2M and Internet of Thing projects.  </p>
-<p><img src="/hc/en-us/article_attachments/200184784/exo_gw_synapse_eval_kit_graphics1.png" alt="" /></p>
-<p> </p>
-<p> </p>
-<p><span class="wysiwyg-font-size-x-large">Getting Started</span></p>
-<p><span class="wysiwyg-underline"><span class="wysiwyg-font-size-large"><strong>Wiring up your RF Engine Protoboards</strong></span></span></p>
-<p>Please wire up your RF Engine protoboards per this graphic.  The pre-installed SNAP application script (SNAPpy) expects the protoboards to be connected to these sensors and LEDs.  This kit includes a Red and Green LEDs, a Photo Cell sensor and a Thermistor sensor for measuring temperature.</p>
-<p><em>Note: The LEDs have a positive and negative side, there should be a slight flat edge on the negative side of the LED in addition to the negative lead being shorter.</em>  </p>
-<p> </p>
-<p><img class="wysiwyg-text-align-center" src="/hc/en-us/article_attachments/200249020/synapse_eval_kit_rf100Proto_hookup1.png" alt="" width="522" height="505" /></p>
+## Overview
+Exosite has worked with Synapse Wireless to create an evaluation kit based on Synapse's SNAP Connect E10 Gateway.  This E10 Gateway has an Ethernet connection and runs Linux in addition to internally having a SNAP RF Engine embedded in it so act as a gateway for a SNAP network to the internet.
+
+The evaluation kit is made up of a Synapse SNAPConnect E10 <em>Gateway</em> and two Synapse RF Engines running on protoboards in addition to some external sensors and LEDs.  The software for this evaluation kit can be used for any make-up of devices and is meant as an evaluation tool and reference code for your specific M2M and Internet of Thing projects.  
+
+![assets/exo_gw_synapse_eval_kit_graphics1.png](assets/exo_gw_synapse_eval_kit_graphics1.png)
+
+
+
+## Getting Started
+
+<strong>Wiring up your RF Engine Protoboards</strong>
+
+Please wire up your RF Engine protoboards per this graphic.  The pre-installed SNAP application script (SNAPpy) expects the protoboards to be connected to these sensors and LEDs.  This kit includes a Red and Green LEDs, a Photo Cell sensor and a Thermistor sensor for measuring temperature.
+
+<em>Note: The LEDs have a positive and negative side, there should be a slight flat edge on the negative side of the LED in addition to the negative lead being shorter.</em>  
+
+
+![assets/synapse_eval_kit_rf100Proto_hookup1.png](assets/synapse_eval_kit_rf100Proto_hookup1.png)
+
 <p>For more details on this hook-up information, please see the EK2100 User Guide, Holiday Light Show demo section.  The only diffence is there is only a Red and Green LED, placing the green LED where the yellow is in the user guide.  </p>
 <p><a href="http://www.synapse-wireless.com/documents/products/Synapse-EK2100-Starter-Kit-User-Guide.pdf">EK2100 User Guide</a></p>
-<p> </p>
-<p> </p>
-<p><span class="wysiwyg-underline"><span class="wysiwyg-font-size-large"><strong>Add your devices to Exosite Web Portal</strong></span></span></p>
-<ol>
-<li>Go to <strong><a style="background-color: #ffffff;" href="https://synapse.exosite.com" target="_blank">https://synapse.exosite.com</a></strong> and log-in or create a new account.</li>
-<li>Once you are logged in, click '<strong>Add a Device</strong>' on the Menu on the left-hand side. <img src="/hc/en-us/article_attachments/200226154/home_page_no_devices1.png" alt="" /></li>
-<li>On the Add Device Menu, Pick <em><strong>Exosite Evaluation SNAP E10 Gateway Kit v1</strong></em> and click continue.  Enter the MAC Address of your E10 which can be found on the bottom sticker of the unit, provide a name for your device and an optional location, hit Continue. <img src="/hc/en-us/article_attachments/200129959/adding_device1.png" alt="" width="519" height="444" /> </li>
-<li>Your E10 Gateway has now been added to your account.  You can now add your SNAP RF Engine Nodes the same way, except choose <em><strong>Exosite Evaluation SNAP Node Protoboard v1</strong></em> for the device type when adding the devices.</li>
-</ol>
+
+<strong>Add your devices to Exosite Web Portal</strong>
+
+1. Go to <strong><a style="background-color: #ffffff;" href="https://synapse.exosite.com" target="_blank">https://synapse.exosite.com</a></strong> and log-in or create a new account.
+2. Once you are logged in, click '<strong>Add a Device</strong>' on the Menu on the left-hand side. <img src="/hc/en-us/article_attachments/200226154/home_page_no_devices1.png" alt="" />
+3. On the Add Device Menu, Pick <em><strong>Exosite Evaluation SNAP E10 Gateway Kit v1</strong></em> and click continue.  Enter the MAC Address of your E10 which can be found on the bottom sticker of the unit, provide a name for your device and an optional location, hit Continue. ![assets/adding_device1.png](assets/adding_device1.png) 
+
+4. Your E10 Gateway has now been added to your account.  You can now add your SNAP RF Engine Nodes the same way, except choose <em><strong>Exosite Evaluation SNAP Node Protoboard v1</strong></em> for the device type when adding the devices.
+
+
+
 <p style="padding-left: 30px;">After adding your gateway and two nodes, your home page will look something like this.  If you click on any of the devices, you'll see the default application dashboard.</p>
-<p><img src="/hc/en-us/article_attachments/200129949/home_page_steps.png" alt="" /> </p>
-<p> </p>
-<p><span class="wysiwyg-underline"><span class="wysiwyg-font-size-large"><strong>Power On and Connect Your Hardware</strong></span></span></p>
+
+ ![assets/home_page_steps.png](assets/home_page_steps.png)
+
+<strong>Power On and Connect Your Hardware</strong>
+
 <p style="padding-left: 30px;"><font size="2">The Synapse gateway and nodes are pre-programmed with application code that will attempt to send data to Exosite.  There are a couple of steps to making this happen.  The first step is that the Gateway and the Nodes must 'pair'. This is so the nodes can direct their wireless function calls to a specific gateway which then intern communicates to Exosite.  </font></p>
+
 <p style="padding-left: 30px;"><font size="2">The second essential step is that the gateway and the nodes provision with Exosite using their unique identifier (MAC Address, SNAP address).  Only one user can 'own' a device.</font></p>
-<ol>
-<li><span style="font-size: small;">Power on your E10 Gateway by either using the included USB Power plug or connecting the USB cable to your computer.  When connecting to your computer, this USB connection can provide you with a Serial port to see the Linux console for the E10 providing debug information.  <strong>LEDB</strong> should turn green right away and the Ethernet connector LEDs should be blinking.<img src="/hc/en-us/article_attachments/200196545/e10_hook-up.png" alt="" /></span></li>
-<li><span style="font-size: small;">Power on your RF Engine nodes.  <strong>Board LED1 should be blinking once per second</strong> if the node does not have a 'paired' gateway address stored in non-volatile memory.</span></li>
-<li><span style="font-size: small;">To 'pair' your nodes to your gateway, press and hold the <strong>'mode' button</strong> of your E10 until <strong>LED A</strong> blinks red once per second.  (It is usually green).  The E10 is now in 'paring mode'.  LED A and the Mode button are on the Antenna side of the E10.<img src="/hc/en-us/article_attachments/200196595/e10_node_pairing.png" alt="" /></span></li>
-<li><span style="font-size: small;">The nodes will automatically attempt to pair every <strong>5 seconds</strong> if they have not been paired to an E10 Gateway.  <em>Note: To easily 'clear' a paired gateway address on a node, you can hold in the button on the prototype board when powering on the node, any paired gateway stored in non-volatile memory will be erased and the device will try to find a new E10 to pair with.</em></span></li>
-<li><span style="font-size: small;">When a node has paired to an E10 gateway, it will flash <strong>LED2 once per second</strong> until it has provisioned with Exosite.  Once a node has paired and activated, it will blink <strong>LED1 and LED2 together once every two seconds</strong>.</span></li>
-<li><span style="font-size: small;">If the E10 has a good network connection and is able to connect to Exosite, it will 'Activate' and begin sending data to the Exosite Portal.  It will also attemp to activate for each node that has paired to it.  <em>Note: An E10 will not activate until a user adds the E10 to their portal, nor be able to activate (provision) a node to Exosite.</em></span></li>
-<li><span style="font-size: small;">Once the gateway and nodes have activated and started sending data, they will show up as 'active' on your home page. (Green icon)</span></li>
-</ol>
-<p><font size="2"> </font></p>
+
+
+1. Power on your E10 Gateway by either using the included USB Power plug or connecting the USB cable to your computer.  When connecting to your computer, this USB connection can provide you with a Serial port to see the Linux console for the E10 providing debug information.  <strong>LEDB</strong> should turn green right away and the Ethernet connector LEDs should be blinking.
+![assets/e10_hook-up.png](assets/e10_hook-up.png)
+
+2. Power on your RF Engine nodes.  <strong>Board LED1 should be blinking once per second</strong> if the node does not have a 'paired' gateway address stored in non-volatile memory.
+3. To 'pair' your nodes to your gateway, press and hold the <strong>'mode' button</strong> of your E10 until <strong>LED A</strong> blinks red once per second.  (It is usually green).  The E10 is now in 'paring mode'.  LED A and the Mode button are on the Antenna side of the E10.
+![assets/e10_node_pairing.png](assets/e10_node_pairing.png)
+4. The nodes will automatically attempt to pair every <strong>5 seconds</strong> if they have not been paired to an E10 Gateway.  <em>Note: To easily 'clear' a paired gateway address on a node, you can hold in the button on the prototype board when powering on the node, any paired gateway stored in non-volatile memory will be erased and the device will try to find a new E10 to pair with.</em></span></li>
+5. When a node has paired to an E10 gateway, it will flash <strong>LED2 once per second</strong> until it has provisioned with Exosite.  Once a node has paired and activated, it will blink <strong>LED1 and LED2 together once every two seconds</strong>.
+6. If the E10 has a good network connection and is able to connect to Exosite, it will 'Activate' and begin sending data to the Exosite Portal.  It will also attemp to activate for each node that has paired to it.  <em>Note: An E10 will not activate until a user adds the E10 to their portal, nor be able to activate (provision) a node to Exosite.</em>
+7. Once the gateway and nodes have activated and started sending data, they will show up as 'active' on your home page. (Green icon)
+
+
+
 <p><em><font size="2">Note: This act of 'pairing' nodes to a gateway is specific to the reference application code for this kit, both on the nodes and the E10 gateway.  Developers are able to choose how they would want nodes and gateways to talk together using Synapse's SNAP application code once they begin developing on their own.  For the ease of use for this kit, this approach was chosen to make sure nodes could be paired to a specific E10 and lessen the chance a node would pair to another E10 in the same local area.  </font></em></p>
-<p> </p>
-<p><span class="wysiwyg-underline"><span class="wysiwyg-font-size-large"><strong>Using the Default Application</strong></span></span></p>
-<p><img src="/hc/en-us/article_attachments/200134089/home_page_kits_active1.png" alt="" width="548" height="350" /></p>
-<p><span class="wysiwyg-font-size-medium wysiwyg-font-size-large" style="font-size: small;">Once your devices have been added and they've started sending data, you can click on the devices in the Device List on your home page.  This will bring up the default application dashboard for that device.  The SNAP RF Engines show graphs for their RF signal, Temperature sensor value, Photo Sensor value, and push button activity.  You can also remotely turn on/off the Red and Green LEDs that have been added.</span></p>
-<p><img src="/hc/en-us/article_attachments/200249200/node_application_dashboard1.png" alt="" width="516" height="511" /> </p>
-<p><strong><span class="wysiwyg-font-size-large"> </span></strong></p>
+
+<strong>Using the Default Application</strong>
+
+![assets/home_page_kits_active1.png](assets/home_page_kits_active1.png)
+
+Once your devices have been added and they've started sending data, you can click on the devices in the Device List on your home page.  This will bring up the default application dashboard for that device.  The SNAP RF Engines show graphs for their RF signal, Temperature sensor value, Photo Sensor value, and push button activity.  You can also remotely turn on/off the Red and Green LEDs that have been added.
+
+![assets/node_application_dashboard1.png](assets/node_application_dashboard1.png)
+
+
 <p><span class="wysiwyg-underline"><span class="wysiwyg-font-size-medium"><strong>LED Control</strong></span></span></p>
 <p><span class="wysiwyg-font-size-medium"><em>Demonstrates reading from Exosite</em></span></p>
 <p>Clicking on the On/Off buttons on the default application dashboard will result in the nodes turning the connected Red and Green LEDs on and off.  This is an example of showing remote control and sending instructions to a remote node.  In this case, the SNAP Node has requested these two data sourced to be 'polled' by the E10 gateway every 2 seconds.  Check out the SNAP Node application code to see how this works.</p>
